@@ -1,12 +1,12 @@
 import React from 'react';
-import PropDrilling from './hooks/useContextHook/PropDrilling'
+import IssueSolve from './hooks/useContextHook/IssueSolve';
 
 const App = () => {
   return (
     <div>
-      <PropDrilling />
+      <IssueSolve />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
