@@ -1,10 +1,10 @@
 import React from 'react';
-import IssueSolve from './hooks/useContextHook/IssueSolve';
+import AnotherContext from './hooks/useContextHook/AnotherContext';
 
 const App = () => {
   return (
     <div>
-      <IssueSolve />
+      <AnotherContext />
     </div>
   );
 };
