@@ -1,28 +1,32 @@
 import React, { useEffect, useReducer } from 'react';
 
 const reducer = (state, action) => {
-    switch (action.type) {
-        case 'UPDATE_USERS_DATA':
-            return {
-                ...state,
-                userData: action.payload
-            };
-        case 'LOADING':
-            return {
-                ...state,
-                isLoading: action.payload
-            };
-        case 'ERROR':
-            return {
-                ...state,
-                isError: {
-                    status: true,
-                    msg: action.payload
-                }
-            };
-        default:
-            return state;
+    if (action.type === 'UPDATE_USERS_DATA') {
+        return {
+            ...state,
+            userData: action.payload,
+        };
     }
+    if (action.type === 'LOADING') {
+        return {
+            ...state,
+            isLoading: action.payload,
+        };
+    }
+    if (action.type === 'DELETE_USER') {
+        const newUsers = state.userData.filter((eachData) => eachData.id !== action.payload);
+        return {
+            ...state,
+            userData: newUsers
+        };
+    }
+    if (action.type === 'ERROR') {
+        return {
+            ...state,
+            isError: action.payload
+        };
+    }
+    return state;
 };
 
 const initialState = {
@@ -33,13 +37,13 @@ const initialState = {
         msg: ''
     }
 };
-
+ 
 const DeleteReducer = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const fetchData = async (fetchDataUrl) => {
         dispatch({ type: 'LOADING', payload: true });
-        dispatch({type:'ERROR', payload:{status: false, msg: ''}})
+        dispatch({ type: 'ERROR', payload: { status: false, msg: '' } });
         try {
             const response = await fetch(fetchDataUrl);
             const data = await response.json();
@@ -48,12 +52,10 @@ const DeleteReducer = () => {
                 payload: data
             });
             dispatch({ type: 'LOADING', payload: false });
-            dispatch({type:'ERROR', payload:{status: false, msg: ''}})
         } catch (error) {
             console.log(error);
-            dispatch({ type: 'ERROR', payload: error.message });
+            dispatch({ type: 'ERROR', payload: { status: true, msg: error.message } });
             dispatch({ type: 'LOADING', payload: false });
-            dispatch({type:'ERROR', payload:{status: true, msg: 'error.message'}})
         }
     };
 
@@ -65,17 +67,19 @@ const DeleteReducer = () => {
         return <h1>Loading..</h1>;
     }
 
+    const deleteHandler = (id) => {
+        dispatch({ type: 'DELETE_USER', payload: id });
+    };
+
     return (
-        <div style={{
-            background:'aqua'
-        }}>
+        <div style={{ background: 'aqua' }}>
             {state.userData.map((eachData) => {
                 const { id, name, email } = eachData;
                 return (
                     <section key={id}>
                         <h3>{name}</h3>
                         <h3>{email}</h3>
-                        <button>Delete</button>
+                        <button onClick={() => deleteHandler(id)}>Delete</button>
                         <button>Edit</button>
                     </section>
                 );
