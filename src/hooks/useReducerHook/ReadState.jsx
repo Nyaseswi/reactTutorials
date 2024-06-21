@@ -20,7 +20,7 @@ const intialState = {
 }
 
 const ReadState = () => {
- const [state, dispatch] = useReducer(reducer, intialState);  
+ const [state] = useReducer(reducer, intialState);  
   return (
     <div>
       <h1>Using Use Reducer hook we understood how to read data, how to access state </h1>
