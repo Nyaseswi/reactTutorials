@@ -1,10 +1,10 @@
 import React from 'react';
-import LoadingReducer from './hooks/useReducerHook/LoadingReducer';
+import DeleteReducer from './hooks/useReducerHook/DeleteReducer';
 
 const App = () => {
   return (
     <div>
-      <LoadingReducer />
+      < DeleteReducer />
     </div>
   );
 };

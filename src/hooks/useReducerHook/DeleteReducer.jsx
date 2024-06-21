@@ -34,7 +34,7 @@ const initialState = {
     }
 };
 
-const LoadingReducer = () => {
+const DeleteReducer = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const fetchData = async (fetchDataUrl) => {
@@ -84,4 +84,4 @@ const LoadingReducer = () => {
     );
 };
 
-export default LoadingReducer;
+export default DeleteReducer;
