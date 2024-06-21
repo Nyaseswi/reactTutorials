@@ -1,10 +1,10 @@
 import React from 'react';
-import ErrorHandlingPartTwo from './hooks/useReducerHook/ErrorHandling';
+import LoadingReducer from './hooks/useReducerHook/LoadingReducer';
 
 const App = () => {
   return (
     <div>
-      <ErrorHandlingPartTwo />
+      <LoadingReducer />
     </div>
   );
 };
