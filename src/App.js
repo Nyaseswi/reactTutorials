@@ -1,10 +1,10 @@
 import React from 'react';
-import AnotherContext from './hooks/useContextHook/AnotherContext';
+import ReadState from './hooks/useReducerHook/ReadState';
 
 const App = () => {
   return (
     <div>
-      <AnotherContext />
+      <ReadState />
     </div>
   );
 };
