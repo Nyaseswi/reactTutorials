@@ -1,10 +1,10 @@
 import React from 'react';
-import DeleteReducer from './hooks/useReducerHook/DeleteReducer';
+import EditHandler from './hooks/useReducerHook/EditHandler';
 
 const App = () => {
   return (
     <div>
-      < DeleteReducer />
+      < EditHandler />
     </div>
   );
 };
