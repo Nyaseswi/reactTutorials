@@ -1,10 +1,10 @@
 import React from 'react';
-import DoubleIncDec from './HooksPractice/DoubleIncDec';
+import ObjectUseState from './HooksPractice/ObjectUseState';
 
 const App = () => {
   return (
     <div>
-      < DoubleIncDec />
+      < ObjectUseState />
     </div>
   );
 };

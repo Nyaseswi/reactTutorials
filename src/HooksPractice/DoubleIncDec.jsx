@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 const DoubleIncDec = () => {
     const [count, setCount] =useState(0);
     const increment = () =>{
@@ -22,5 +21,4 @@ const DoubleIncDec = () => {
     </div>
   )
 }
-
 export default DoubleIncDec
