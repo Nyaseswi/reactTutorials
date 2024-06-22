@@ -1,10 +1,10 @@
 import React from 'react';
-import CreateComponents from './components/CreateComponents';
+import RenderElements from './components/RenderElements';
 
 const App = () => {
   return (
     <div>
-      < CreateComponents />
+      < RenderElements />
     </div>
   );
 };
