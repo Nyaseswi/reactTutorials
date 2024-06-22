@@ -1,10 +1,10 @@
 import React from 'react';
-import EditHandler from './hooks/useReducerHook/EditHandler';
+import CreateComponents from './components/CreateComponents';
 
 const App = () => {
   return (
     <div>
-      < EditHandler />
+      < CreateComponents />
     </div>
   );
 };
