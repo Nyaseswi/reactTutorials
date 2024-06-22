@@ -1,10 +1,10 @@
 import React from 'react';
-import NestedComponents from './components/NestedComponents';
+import SingleComponentProps from './props/SingleComponentProps';
 
 const App = () => {
   return (
     <div>
-      < NestedComponents />
+      < SingleComponentProps />
     </div>
   );
 };
