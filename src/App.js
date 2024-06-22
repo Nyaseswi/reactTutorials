@@ -1,10 +1,10 @@
 import React from 'react';
-import ObjectUseState from './HooksPractice/ObjectUseState';
+import MuntipleStatesUS from './HooksPractice/MuntipleStatesUS';
 
 const App = () => {
   return (
     <div>
-      < ObjectUseState />
+      < MuntipleStatesUS />
     </div>
   );
 };
