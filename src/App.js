@@ -1,10 +1,10 @@
 import React from 'react';
-import FormHandleUS from './HooksPractice/useStatePractice/FormHandleUS';
+import UEDoubleDep from './HooksPractice/useEffectPractice/UEDoubleDep';
 
 const App = () => {
   return (
     <div>
-      < FormHandleUS />
+      < UEDoubleDep />
     </div>
   );
 };
