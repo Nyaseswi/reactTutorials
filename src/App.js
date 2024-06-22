@@ -1,10 +1,10 @@
 import React from 'react';
-import SingleComponentProps from './props/SingleComponentProps';
+import ArrayOfObjects from './props/ArrayOfObjects';
 
 const App = () => {
   return (
     <div>
-      < SingleComponentProps />
+      < ArrayOfObjects />
     </div>
   );
 };
