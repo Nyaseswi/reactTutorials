@@ -1,10 +1,10 @@
 import React from 'react';
-import RenderElements from './components/RenderElements';
+import NestedComponents from './components/NestedComponents';
 
 const App = () => {
   return (
     <div>
-      < RenderElements />
+      < NestedComponents />
     </div>
   );
 };
