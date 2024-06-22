@@ -1,10 +1,10 @@
 import React from 'react';
-import MuntipleStatesUS from './HooksPractice/MuntipleStatesUS';
+import ConditionBoolUS from './HooksPractice/ConditionBoolUS';
 
 const App = () => {
   return (
     <div>
-      < MuntipleStatesUS />
+      < ConditionBoolUS />
     </div>
   );
 };
