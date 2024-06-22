@@ -1,10 +1,10 @@
 import React from 'react';
-import ArrayOfObjects from './props/ArrayOfObjects';
+import DoubleIncDec from './HooksPractice/DoubleIncDec';
 
 const App = () => {
   return (
     <div>
-      < ArrayOfObjects />
+      < DoubleIncDec />
     </div>
   );
 };
