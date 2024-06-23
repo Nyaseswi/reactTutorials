@@ -1,10 +1,10 @@
 import React from 'react';
-import BasicUR from './HooksPractice/UseReducerPractice/BasicUR';
+import CRUDOperations from './HooksPractice/UseReducerPractice/CRUDOperations';
 
 const App = () => {
   return (
     <div>
-      < BasicUR />
+      < CRUDOperations />
     </div>
   );
 };
