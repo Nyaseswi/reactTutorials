@@ -1,10 +1,10 @@
 import React from 'react';
-import PerformanceUE from './HooksPractice/useEffectPractice/PerformanceUE';
+import FetchUE from './HooksPractice/useEffectPractice/FetchUE';
 
 const App = () => {
   return (
     <div>
-      < PerformanceUE />
+      < FetchUE />
     </div>
   );
 };
