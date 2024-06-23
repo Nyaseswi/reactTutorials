@@ -1,10 +1,10 @@
 import React from 'react';
-import UEDoubleDep from './HooksPractice/useEffectPractice/UEDoubleDep';
+import PerformanceUE from './HooksPractice/useEffectPractice/PerformanceUE';
 
 const App = () => {
   return (
     <div>
-      < UEDoubleDep />
+      < PerformanceUE />
     </div>
   );
 };
