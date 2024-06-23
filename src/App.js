@@ -1,10 +1,10 @@
 import React from 'react';
-import FetchUE from './HooksPractice/useEffectPractice/FetchUE';
+import BasicUR from './HooksPractice/UseReducerPractice/BasicUR';
 
 const App = () => {
   return (
     <div>
-      < FetchUE />
+      < BasicUR />
     </div>
   );
 };
