@@ -1,10 +1,10 @@
 import React from 'react';
-import BasicRef from './hooks/useRefHook/BasicRef';
+import AccessDOM from './hooks/useRefHook/AccessDOM';
 
 const App = () => {
   return (
     <div>
-      < BasicRef />
+      < AccessDOM />
     </div>
   );
 };
