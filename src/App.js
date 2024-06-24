@@ -1,10 +1,10 @@
 import React from 'react';
-import CRUDOperations from './HooksPractice/UseReducerPractice/CRUDOperations';
+import BasicRef from './hooks/useRefHook/BasicRef';
 
 const App = () => {
   return (
     <div>
-      < CRUDOperations />
+      < BasicRef />
     </div>
   );
 };
