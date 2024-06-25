@@ -1,10 +1,10 @@
 import React from 'react';
-import PartOne from './hooks/useCallBackUseMemo/PartOne';
+import ParentComponent from './hooks/useCallBackUseMemo/ParentComponent';
 
 const App = () => {
   return (
     <div>
-      < PartOne />
+      < ParentComponent />
     </div>
   );
 };
