@@ -1,10 +1,10 @@
 import React from 'react';
-import IssueSolve from './hooks/useMemoHook/IssueSolve';
+import PartOne from './hooks/useCallBackUseMemo/PartOne';
 
 const App = () => {
   return (
     <div>
-      < IssueSolve />
+      < PartOne />
     </div>
   );
 };
