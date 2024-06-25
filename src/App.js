@@ -1,10 +1,10 @@
 import React from 'react';
-import AccessDOM from './hooks/useRefHook/AccessDOM';
+import IssueSolve from './hooks/useMemoHook/IssueSolve';
 
 const App = () => {
   return (
     <div>
-      < AccessDOM />
+      < IssueSolve />
     </div>
   );
 };
