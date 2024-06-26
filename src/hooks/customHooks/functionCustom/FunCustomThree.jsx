@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import OwnFunHook from './OwnFunHook';
+import React from 'react'
+import ArgumentFunction from './ArgumentFunction'
 
-const FunCustomOne = () => {
-const [count, onIncrement, onDecrement, onReset] =  OwnFunHook();
+const FunCustomThree = () => {
+  const [count, onIncrement, onDecrement, onReset] = ArgumentFunction(10)
   return (
     <div>
       <h1>Count: {count}</h1>
@@ -13,4 +13,4 @@ const [count, onIncrement, onDecrement, onReset] =  OwnFunHook();
   )
 }
 
-export default FunCustomOne
+export default FunCustomThree
