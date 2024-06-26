@@ -1,12 +1,11 @@
 import React from 'react';
-import PartOneCH from './hooks/customHooks/countExample/PartOneCH';
-import PartTwoCH from './hooks/customHooks/countExample/PartTwoCH';
+import FunCustomOne from './hooks/customHooks/functionCustom/FunCustomOne'
 
 const App = () => {
   return (
     <div>
-      <PartOneCH />
-      <PartTwoCH />
+      <FunCustomOne />
+
     </div>
   );
 };
