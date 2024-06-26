@@ -1,13 +1,9 @@
 import React from 'react';
-import FunCustomOne from './hooks/customHooks/functionCustom/FunCustomOne'
-import FunCustomTwo from './hooks/customHooks/functionCustom/FunCustomTwo'
-import FunCustomThree from './hooks/customHooks/functionCustom/FunCustomThree'
+import PartOneApi from './hooks/customHooks/ApiCustom/PartOneApi'
 const App = () => {
   return (
     <div>
-      <FunCustomOne />
-      <FunCustomTwo />
-      <FunCustomThree />
+      <PartOneApi />
     </div>
   );
 };
