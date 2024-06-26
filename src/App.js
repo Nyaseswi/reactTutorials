@@ -1,9 +1,9 @@
 import React from 'react';
-import PartOneApi from './hooks/customHooks/ApiCustom/PartOneApi'
+import PartTwoApi from './hooks/customHooks/ApiCustom/PartTwoApi'
 const App = () => {
   return (
     <div>
-      <PartOneApi />
+      <PartTwoApi />
     </div>
   );
 };
