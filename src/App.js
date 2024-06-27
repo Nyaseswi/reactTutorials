@@ -1,9 +1,18 @@
 import React from 'react';
-import PartTwoApi from './hooks/customHooks/ApiCustom/PartTwoApi'
+import Home from './RRDcomponents/Home';
+import About from './RRDcomponents/About';
+import Courses from './RRDcomponents/Courses';
+import { Routes, Route } from 'react-router-dom';
+
 const App = () => {
   return (
     <div>
-      <PartTwoApi />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/Courses' element={<Courses />} />
+      </Routes>
+
     </div>
   );
 };
