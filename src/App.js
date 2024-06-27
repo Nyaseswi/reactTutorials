@@ -5,7 +5,10 @@ import Home from './RRDcomponents/Home';
 import About from './RRDcomponents/About';
 import Courses from './RRDcomponents/Courses';
 import Success from './HooksInReactRouterDom/Success';
-import NotFound from './404DataNotFound/NotFound'
+import NotFound from './404DataNotFound/NotFound';
+import Projects from './RRDcomponents/Projects';
+import FeaturedProjects from './RRDcomponents/FeaturedProjects';
+import NewProjects from './RRDcomponents/NewProjects';
 
 const App = () => {
   return (
@@ -17,6 +20,10 @@ const App = () => {
         <Route path='/Courses' element={<Courses />} />
         <Route path='/success' element={<Success />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='/projects' element={<Projects />}>
+          <Route path='featured' element={<FeaturedProjects />} />
+          <Route path='new' element={<NewProjects />} />
+        </Route>
       </Routes>
 
     </div>
