@@ -15,6 +15,8 @@ export default function NavLinks() {
       <NavLink to='/about' style={navLinkStyles}>About</NavLink>
       <NavLink to='/courses' style={navLinkStyles}>Courses</NavLink>
       <NavLink to='/projects' style={navLinkStyles}>Projects</NavLink>
+      <NavLink to='/users' style={navLinkStyles}>Users</NavLink>
+
     </div>
   )
 }

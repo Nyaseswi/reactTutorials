@@ -9,6 +9,7 @@ import NotFound from './404DataNotFound/NotFound';
 import Projects from './RRDcomponents/Projects';
 import FeaturedProjects from './RRDcomponents/FeaturedProjects';
 import NewProjects from './RRDcomponents/NewProjects';
+import Users from './RRDcomponents/Users'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='featured' element={<FeaturedProjects />} />
           <Route path='new' element={<NewProjects />} />
         </Route>
+        <Route path='/users' element={<Users />} />
       </Routes>
 
     </div>
