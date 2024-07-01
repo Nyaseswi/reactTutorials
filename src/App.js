@@ -12,13 +12,18 @@ import NewProjects from './RRDcomponents/NewProjects';
 import Users from './RRDcomponents/Users';
 import UserDetails from './RRDcomponents/UserDetails'
 
+// dynamic routing 
+
+const LazyAbout = React.lazy(() => import('./RRDcomponents/About'));
+
 const App = () => {
   return (
     <div>
       <NavLinks />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        {/* <Route path='/about' element={<About />} /> */}
+        <Route path='/about' element={<React.Suspense fallback='Loading Wait'> <LazyAbout /> </React.Suspense>} />
         <Route path='/Courses' element={<Courses />} />
         <Route path='/success' element={<Success />} />
         <Route path='*' element={<NotFound />} />
