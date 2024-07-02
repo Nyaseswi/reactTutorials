@@ -11,6 +11,7 @@ import FeaturedProjects from './RRDcomponents/FeaturedProjects';
 import NewProjects from './RRDcomponents/NewProjects';
 import Users from './RRDcomponents/Users';
 import UserDetails from './RRDcomponents/UserDetails'
+import HoverCounter from './higherOrderComponents/HoverCounter'
 
 // dynamic routing 
 
@@ -22,6 +23,7 @@ const App = () => {
       <NavLinks />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/hovercounter' element={<HoverCounter />} />
         {/* <Route path='/about' element={<About />} /> */}
         <Route path='/about' element={<React.Suspense fallback='Loading Wait'> <LazyAbout /> </React.Suspense>} />
         <Route path='/Courses' element={<Courses />} />
