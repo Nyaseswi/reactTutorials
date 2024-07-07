@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import HelloReactPractice from './practice/HelloReactPractice';
+import NotificationsFunctional from './components/NotificationsFunctional';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <HelloReactPractice />
+        <NotificationsFunctional initialText={'You have few notifications'} />
     </React.StrictMode>
 
 )
