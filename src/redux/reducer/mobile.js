@@ -14,6 +14,11 @@ const mobileReducer = (state = intialContacts, action) => {
                 ...state,
                 noOfMobile: state.noOfMobile + 1
             };
+        case 'BUY_MOBILE_SUCCESS':
+            return {
+                ...state,
+                noOfMobile: state.noOfMobile * 2
+            };
         default:
             return state;
     }

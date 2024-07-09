@@ -9,3 +9,9 @@ export const sellMobile = () => {
         type: 'SELL_MOBILE'
     }
 }
+
+export const buyMobileSuccess = () => {
+    return {
+        type: 'BUY_MOBILE_SUCCESS'
+    }
+}
