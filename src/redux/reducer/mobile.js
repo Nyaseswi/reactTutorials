@@ -1,8 +1,8 @@
-const intialContacts = {
+const initialContacts = {
     noOfMobile: 10
 }
 
-const mobileReducer = (state = intialContacts, action) => {
+const mobileReducer = (state = initialContacts, action) => {
     switch (action.type) {
         case 'BUY_MOBILE':
             return {
