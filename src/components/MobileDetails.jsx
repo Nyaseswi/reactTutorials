@@ -1,4 +1,5 @@
 import React from 'react';
+import  {Link}  from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { buyMobile, sellMobile,buyMobileSuccess,sellMobileSuccess } from '../redux/actions/mobileActions';
@@ -11,6 +12,7 @@ const MobileDetails = ({ buyMobile, sellMobile, noOfMobile, buyMobileSuccess, se
       <button onClick={() => sellMobile() }>Sell Mobile</button>
       <button onClick={() => buyMobileSuccess() }>Buy Mobile Success</button>
       <button onClick={() => sellMobileSuccess() }>Sell Mobile Success</button>
+      <Link to='/userDetails'>User Details</Link>
     </div>
   );
 };
