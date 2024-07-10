@@ -15,3 +15,9 @@ export const buyMobileSuccess = () => {
         type: 'BUY_MOBILE_SUCCESS'
     }
 }
+
+export const sellMobileSuccess = () => {
+    return {
+        type: 'SELL_MOBILE_SUCCESS'
+    }
+}
