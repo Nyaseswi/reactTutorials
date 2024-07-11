@@ -1,5 +1,6 @@
 const initialUser = {
-    noOfUser: []
+    noOfUser: [],
+    user: {}
 }
 
 const userReducer = (state = initialUser, action) => {
@@ -15,6 +16,17 @@ const userReducer = (state = initialUser, action) => {
                 ...state,
                 message: action.message
             }
+        case 'GET_SINGLE_USER_SUCCESS':
+            return {
+                ...state,
+                user: action.data
+            }
+        case 'GET_SINGLE_USER_FAILED':
+            return {
+                ...state,
+                message: action.message
+            }
+
         default:
             return state;
     }
