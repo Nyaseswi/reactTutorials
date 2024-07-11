@@ -10,6 +10,11 @@ const userReducer = (state = initialUser, action) => {
                 ...state,
                 noOfUser: action.data
             }
+        case 'GET_ALL_USERS_FAILED':
+            return {
+                ...state,
+                message: action.message
+            }
         default:
             return state;
     }
